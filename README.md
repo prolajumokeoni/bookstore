@@ -14,14 +14,13 @@ Bookstore website is built with react and redux, featurea of the website include
 ## DEPLOYMENT
 
 ## SCREENSHOT
-![Untitled design (15)](https://user-images.githubusercontent.com/69638013/134492101-ef370ebf-311d-4cec-bbce-351a07b376a2.png)
 
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
 
-- [Copy this link](https://github.com/prolajumokeoni/math-magicians)
+- [Copy this link](https://github.com/prolajumokeoni/bookstore)
 - Open your terminal or command line
 - Run `git clone` and Paste the link
 - After the clone, type in the command `cd bookstore` to access the directory on the terminal
