@@ -1,10 +1,12 @@
 # Bookstore
-Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-- Make simple calculations.
-- Read a random math-related quote.
-By building this application, I will learn how to use React.
+Bookstore website is built with react and redux, featurea of the website includes:
+
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
 ## Built With
+- Redux
 - React
 - Javascript
 - Html5
