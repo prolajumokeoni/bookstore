@@ -11,15 +11,17 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/books">
-          <Books />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-      </Switch>
+      <div className="container border shadow mt-5">
+        <Navbar />
+        <Switch>
+          <Route path="/books">
+            <Books />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
