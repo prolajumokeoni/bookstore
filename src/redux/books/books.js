@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { removeBookFromApi } from '../apiCalls';
 
 // books.js
 export const setBooks = (books) => ({
@@ -21,6 +22,7 @@ export const booksReducers = (state = [], action) => {
     case 'ADD_BOOKS':
       return [...state, action.payload];
     case 'REMOVE_BOOKS':
+      removeBookFromApi(action.payload);
       return state.filter((book) => book.item_id !== action.payload);
     case 'SET_BOOKS':
       return state.concat(action.payload);

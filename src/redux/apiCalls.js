@@ -15,4 +15,11 @@ const fetchBooks = async () => {
 
 export default fetchBooks;
 // ADD BOOKS
+
 // REMOVE BOOOKS
+export const removeBookFromApi = async (id) => {
+  await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/uJULW0akXJFdXgclsOsN/books/${id}`, {
+    method: 'DELETE',
+    headers: { 'Content-type': 'application/json; charset=UTF-8' },
+  });
+};
