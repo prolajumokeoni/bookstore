@@ -1,5 +1,11 @@
-// books.js
 import { combineReducers } from 'redux';
+
+// books.js
+export const setBooks = (books) => ({
+  type: 'SET_BOOKS',
+  payload: books,
+});
+
 // Actions
 export const addBooks = (book) => ({
   type: 'ADD_BOOKS',
@@ -15,7 +21,9 @@ export const booksReducers = (state = [], action) => {
     case 'ADD_BOOKS':
       return [...state, action.payload];
     case 'REMOVE_BOOKS':
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
+    case 'SET_BOOKS':
+      return state.concat(action.payload);
     default:
       return state;
   }
