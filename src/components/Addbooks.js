@@ -22,11 +22,34 @@ const Addbooks = () => {
   };
 
   return (
-    <div>
+    <div className="row w-100 px-5 pb-5 mx-5">
+      <h4 className="text-muted fw-bold my-3">Add new book</h4>
       <form>
-        <input className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="book title" />
-        <input className="form-control" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="category" />
-        <button onClick={addNewBook} type="button">Submit</button>
+        <div className="d-flex row">
+          <div className="col">
+            <input
+              type="text"
+              className="form-control"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="book title"
+            />
+          </div>
+          <div className="col">
+            <input
+              type="text"
+              className="form-control"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              placeholder="category"
+            />
+          </div>
+          <div className="col">
+            <button onClick={addNewBook} type="button" className="btn btn-small btn-primary">
+              ADD BOOKS
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   );

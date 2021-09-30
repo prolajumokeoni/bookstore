@@ -6,3 +6,17 @@ body {
   font-weight: bolder;
   color: #0d6efd;
 }
+
+.containerBody {
+  height: 400px;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+

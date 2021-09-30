@@ -10,7 +10,7 @@ const Navbar = () => (
       <NavLink className="nav-link" to="/" exact>New books</NavLink>
     </li>
     <li className="nav-item">
-      <NavLink className="nav-link" to="/categories" exact>Categories</NavLink>
+      <NavLink className="nav-link text-muted" to="/categories" exact>Categories</NavLink>
     </li>
   </ul>
 );
