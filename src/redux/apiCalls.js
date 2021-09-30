@@ -1,4 +1,3 @@
-// SHOW BOOKS
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/uJULW0akXJFdXgclsOsN/books/';
 const fetchBooks = async () => {
   const response = await fetch(url);
@@ -14,7 +13,6 @@ const fetchBooks = async () => {
 };
 
 export default fetchBooks;
-// ADD BOOKS
 export const saveBookToApi = async (data) => {
   await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/uJULW0akXJFdXgclsOsN/books/', {
     method: 'POST',
@@ -23,7 +21,6 @@ export const saveBookToApi = async (data) => {
   });
 };
 
-// REMOVE BOOOKS
 export const removeBookFromApi = async (id) => {
   await fetch(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/uJULW0akXJFdXgclsOsN/books/${id}`, {
     method: 'DELETE',
