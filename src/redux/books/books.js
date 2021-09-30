@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
 import { removeBookFromApi, saveBookToApi } from '../apiCalls';
 
-
 export const setBooks = (books) => ({
   type: 'SET_BOOKS',
   payload: books,
