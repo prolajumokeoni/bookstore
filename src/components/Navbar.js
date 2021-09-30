@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <ul className="nav">
     <li className="nav-item">
-      <Link to="/" className="nav-link  fs-4 fw-bolder">BookStore CMS</Link>
+      <NavLink className="nav-link" to="/Booklists" exact>BOOKSTORE CMS</NavLink>
     </li>
     <li className="nav-item">
-      <Link to="/books" className="nav-link fs-4 fw-bolder">BOOKS</Link>
+      <NavLink className="nav-link" to="/books" exact>New books</NavLink>
     </li>
     <li className="nav-item">
-      <Link to="/categories" className="nav-link fs-4 fw-bolder">CATEGORIES</Link>
+      <NavLink className="nav-link" to="/categories" exact>Categories</NavLink>
     </li>
   </ul>
 );
