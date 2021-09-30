@@ -14,13 +14,8 @@ function App() {
       <div className="container border shadow mt-5">
         <Navbar />
         <Switch>
-          <Route path="/" component={Books} />
-          <Route path="/books">
-            <Books />
-          </Route>
-          <Route path="/categories">
-            <Categories />
-          </Route>
+          <Route exact path="/" component={Books} />
+          <Route exact path="/categories" component={Categories} />
         </Switch>
       </div>
     </Router>

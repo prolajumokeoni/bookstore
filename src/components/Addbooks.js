@@ -6,18 +6,18 @@ const Addbooks = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const addNewBook = (e) => {
-    if (title && author) {
+    if (title && category) {
       e.preventDefault();
       const data = {
         title,
-        author,
-        id: books.length + 1,
+        category,
+        item_id: books.length + 1,
       };
       dispatch(addBooks(data));
       setTitle('');
-      setAuthor('');
+      setCategory('');
     }
   };
 
@@ -25,7 +25,7 @@ const Addbooks = () => {
     <div>
       <form>
         <input className="form-control" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="book title" />
-        <input className="form-control" value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="author" />
+        <input className="form-control" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="category" />
         <button onClick={addNewBook} type="button">Submit</button>
       </form>
     </div>

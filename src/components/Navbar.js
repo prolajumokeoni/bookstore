@@ -7,7 +7,7 @@ const Navbar = () => (
       <a href="/" className="nav-link">BOOKSTORE CMS</a>
     </li>
     <li className="nav-item">
-      <NavLink className="nav-link" to="/books" exact>New books</NavLink>
+      <NavLink className="nav-link" to="/" exact>New books</NavLink>
     </li>
     <li className="nav-item">
       <NavLink className="nav-link" to="/categories" exact>Categories</NavLink>

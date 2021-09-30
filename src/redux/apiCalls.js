@@ -15,6 +15,13 @@ const fetchBooks = async () => {
 
 export default fetchBooks;
 // ADD BOOKS
+export const saveBookToApi = async (data) => {
+  await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/uJULW0akXJFdXgclsOsN/books/', {
+    method: 'POST',
+    headers: { 'Content-type': 'application/json; charset=UTF-8' },
+    body: JSON.stringify(data),
+  });
+};
 
 // REMOVE BOOOKS
 export const removeBookFromApi = async (id) => {
