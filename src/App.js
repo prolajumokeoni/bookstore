@@ -11,7 +11,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Router>
-      <div className="container border shadow mt-5">
+      <div className="container border shadow py-3 mt-3">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Books} />

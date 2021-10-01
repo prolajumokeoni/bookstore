@@ -12,8 +12,11 @@ Bookstore website is built with react and redux, featurea of the website include
 - Html5
 - Css3
 ## DEPLOYMENT
+[Live Demo](https://deploy-preview-4--serene-kare-79146f.netlify.app/)
 
 ## SCREENSHOT
+![probookstore](https://user-images.githubusercontent.com/69638013/135599340-b2521d66-9267-4275-a24c-b38ada48a610.png)
+
 
 
 ## Getting Started
