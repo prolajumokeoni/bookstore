@@ -15,7 +15,7 @@ Bookstore website is built with react and redux, featurea of the website include
 [Live Demo](https://deploy-preview-4--serene-kare-79146f.netlify.app/)
 
 ## SCREENSHOT
-![localhost_3000_](https://user-images.githubusercontent.com/69638013/135598110-ecd2d5d5-7732-4f50-b050-617895e04fb9.png)
+![probookstore](https://user-images.githubusercontent.com/69638013/135599340-b2521d66-9267-4275-a24c-b38ada48a610.png)
 
 
 
