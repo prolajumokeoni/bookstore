@@ -38,9 +38,9 @@ const SingleBook = ({ book }) => {
         </div>
         <div className="border m-5" />
         <div className="mt-4">
-          <p className="text-muted">Current Chapter</p>
+          <p className="text-muted text-nowrap">Current Chapter</p>
           <p>Chapter 17</p>
-          <p className="bg-primary rounded px-3 py-2 text-white">
+          <p className="bg-primary rounded px-3 py-2 text-white text-nowrap">
             Update progress
           </p>
         </div>
