@@ -8,19 +8,24 @@ const SingleBook = ({ book }) => {
     <div>
       <li className="list-group-item m-2 shadow d-flex justify-content-between">
         <div className="">
-          <p className="text-muted">{book.category}</p>
-          <div className="fw-bolder fs-3">{book.title}</div>
-          <button
-            type="button"
-            className="btn btn-sm btn-link "
-            onClick={() => dispatch(removeBooks(book.item_id))}
-          >
-            Remove Book
-          </button>
+          <small className="text-muted fw-bold px-3">{book.category}</small>
+          <p className="fw-bolder fs-3 px-3">{book.title}</p>
+          <p className="text-primary px-3">Book Author</p>
+          <div className="d-flex align-items-baseline text-primary px-2">
+            <p className="border-right p-2">Comments</p>
+            <button
+              type="button"
+              className="btn btn-small border border-top-0 border-bottom-0 rounded-0 link-primary"
+              onClick={() => dispatch(removeBooks(book.item_id))}
+            >
+              Remove Book
+            </button>
+            <p className="p-2">Edit</p>
+          </div>
         </div>
-        <div className="d-flex">
+        <div className="d-flex px-5 mx-5 align-items-center mt-3">
           <div className="progress-circle over50 p69">
-            <span>69%</span>
+            <span>65%</span>
             <div className="left-half-clipper">
               <div className="first50-bar" />
               <div className="value-bar" />
@@ -31,7 +36,8 @@ const SingleBook = ({ book }) => {
             <p className="text-muted">Completed</p>
           </div>
         </div>
-        <div>
+        <div className="border m-5" />
+        <div className="mt-4">
           <p className="text-muted">Current Chapter</p>
           <p>Chapter 17</p>
           <p className="bg-primary rounded px-3 py-2 text-white">
