@@ -1,5 +1,5 @@
 # Bookstore
-Bookstore website is built with react and redux, featurea of the website includes:
+Bookstore website is built with react and redux, feature of the website includes:
 
 - Display a list of books.
 - Add a book.
